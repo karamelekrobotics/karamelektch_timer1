@@ -1,0 +1,26 @@
+--cpu Cortex-M7.fp.dp
+"karamelektech_timers\startup_stm32f767xx.o"
+"karamelektech_timers\main.o"
+"karamelektech_timers\stm32f7xx_it.o"
+"karamelektech_timers\stm32f7xx_hal_msp.o"
+"karamelektech_timers\stm32f7xx_hal_cortex.o"
+"karamelektech_timers\stm32f7xx_hal_tim.o"
+"karamelektech_timers\stm32f7xx_hal_tim_ex.o"
+"karamelektech_timers\stm32f7xx_hal_rcc.o"
+"karamelektech_timers\stm32f7xx_hal_rcc_ex.o"
+"karamelektech_timers\stm32f7xx_hal_flash.o"
+"karamelektech_timers\stm32f7xx_hal_flash_ex.o"
+"karamelektech_timers\stm32f7xx_hal_gpio.o"
+"karamelektech_timers\stm32f7xx_hal_dma.o"
+"karamelektech_timers\stm32f7xx_hal_dma_ex.o"
+"karamelektech_timers\stm32f7xx_hal_pwr.o"
+"karamelektech_timers\stm32f7xx_hal_pwr_ex.o"
+"karamelektech_timers\stm32f7xx_hal.o"
+"karamelektech_timers\stm32f7xx_hal_i2c.o"
+"karamelektech_timers\stm32f7xx_hal_i2c_ex.o"
+"karamelektech_timers\stm32f7xx_hal_exti.o"
+"karamelektech_timers\system_stm32f7xx.o"
+--library_type=microlib --strict --scatter "karamelektech_timers\karamelektech_timers.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "karamelektech_timers.map" -o karamelektech_timers\karamelektech_timers.axf
